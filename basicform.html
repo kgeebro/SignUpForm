@@ -7,20 +7,48 @@
 <body>
 
 	<div class="container">
-		<form>
-			<label for="firstName">First Name:</label>
-			<input id="firstName" type="text" name="">
+		<form autocomplete="off">
+			<label for="firstName" class="hidden-label">First Name</label>
+			<input id="firstName" type="text" name="firstName" placeholder="First Name">
 
-			<label for="lastName">Last Name:</label>
-			<input id="lastName" type="text" name="">
+			<label for="lastName" class="hidden-label">Last Name</label>
+			<input id="lastName" type="text" name="lastName" placeholder="Last Name">
 
-			<label for="birthday">Date Of Birth</label>
-			<input id="birthday" type="date" name="">
+			<label for="birthday" class="hidden-label">Birthday</label>
+			<input id="birthday" type="date" name="birthday" placeholder="">
 
 			<label for="submit"></label>
-			<input id="submit" type="submit" name="">
+			<input id="submit" type="submit" value="Submit">
 		</form>
 	</div>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+
+Quick Tips & Tricks:
+
+1. To stop auto-complete on a form enter (autocomplete="off").
+
+2.
+
+
+
+Cross Browser Notes:
+
+1. If no "value" is placed for the submit button internet explorer will show "Submit Query". 
+
+Example:    <label for="submit"></label>
+			<input id="submit" type="submit" value="Submit"> 
+
+2.
+
+-->
