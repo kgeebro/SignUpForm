@@ -1,0 +1,55 @@
+html {
+	height: 100%;
+}
+
+body {
+	/*background-color: #42cef4;*/
+	background-image: linear-gradient(to bottom right, #42cef4, #FFF);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+form {
+	padding: 50px 40px; /*This creates border around the form. Keeps the elements from reaching */
+}
+
+
+
+/*hidden label hides the form labels but keeps them in mind when someone is using accessibility tools*/
+.hidden-label{
+	position: absolute;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	visibility: 0;
+} 
+
+input[type="date"], 
+input[type="text"], 
+input[type="submit"] {
+	width: 50%;
+	display: block;
+	box-sizing: border-box;
+	padding: 0 10px; /*This moves the text itself*/
+	height: 40px; /*The height if the inputs*/
+	font-family: Tahoma, sans-serif;
+	margin: 15px auto; /*This centers the element and creates space between each element auto is the center alignment*/
+}
+
+/*active box line*/
+input[type="date"]:focus, 
+input[type="text"]:focus, 
+input[type="submit"]:focus {
+	border: 5px solid #42aef4;
+}
+
+/*removes downward date picker arrow*/
+input::-webkit-calendar-picker-indicator{
+    display: none;
+} 
+
+/*removes up and down arrows for date*/
+input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+} 
